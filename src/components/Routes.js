@@ -8,8 +8,12 @@ class Routes extends Component {
 		return(
       		<div>
 	      		<Router>
-		             <Route exact path="/"  render={()=><Page1 />} />
-		             <Route path="/Page2" render={()=><Page2 />} />
+		             <Route exact path="/"> 
+		             	<Page1 />
+		             </Route>
+		             <Route path="/Page2">
+		             	<Page2 />
+		             </Route>
 	            </Router>
 	        </div>
 
